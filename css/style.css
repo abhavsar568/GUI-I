@@ -1,0 +1,26 @@
+body {
+        font-family: "Georgia";
+        min-height: 2000px;
+       }
+
+div.navbar-static-top {
+          margin-bottom: 19px;
+        }
+
+h1 {
+        /*slight shadow for emphasis*/
+        text-shadow: 2px 2px #ffffff;
+        text-align: center;
+        font-size: 30pt;
+        font-weight: lighter;
+        }
+        
+h3 {
+        text-align: center;
+        font-size: 14pt;
+        font-weight:lighter;
+        }
+
+.jumbotron {
+  background-color: "red";
+  }

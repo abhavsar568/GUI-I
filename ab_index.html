@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!--
+  Avani Bhavsar, Umass Lowell Computer Science
+  avani_bhavsar@student.uml.edu
+  96.61 GUI Programming I
+  /abhavsar/public_html/ab_index.html
+  Created October 10, 2020
+  Recreate your index to assignments using bootstrap
+  -->
+  <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="canonical" href="https://getbootstrap.com/docs/3.4/examples/navbar-static-top/">
+        <link rel="canonical" href="https://getbootstrap.com/docs/3.4/examples/jumbotron/">
+        <title>GUI I</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+       <link rel="stylesheet" type="text/css" href="css/index_style.css">
+        <!--<script src="script.js"></script>-->
+    </head>
+    <body>
+      <!--navbar static, bootstrap ex-->
+        <nav class="navbar navbar-default navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#"><Index</a>
+            </div>
+            <div = id="navbar" class="navbar-collapse collapse">
+              <ul class = "nav navbar-nav">
+                <li class="active"><a href="">Home</a></li>
+                <li><a href="HW/hw2.html">Assignment 2</a></li>
+                <li><a href="#a3">Assignment 3</a></li>
+                <li><a href="#a4">Assignment 4</a></li>
+                <li><a href="#a5">Assignment 5</a></li>
+                <li><a href="#a6">Assignment 6</a></li>
+                <li><a href="#a7">Assignment 7</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- Jumbotron with bio -->
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container" style="color:white">
+            <h1>Avani Bhavsar</h1>
+            <hr>
+            <h3> About Me</h3>
+            <div class="bio">
+          I am currently a senior Computer Science student at Umass Lowell. I dabbled
+        for a couple of years at UCONN studying Cognitive Science before I changed majors.</div>
+        <br>
+            <div class="hobbies">
+          My hobbies include reading, scenic hiking, and dancing. I love to travel to
+          new places and look at beautiful scenery as well as gazing at the stars. </div>
+        <br>
+            <div class="proj">
+            Since I have started coding a couple of years ago, I have developed
+            a Chrome Extension that allows users to search for movies using the
+            LetterBox'd platform and am currently developing a Wikimedia citation checker
+            using React.</div>
+          </div>
+        </div>
+
+        <!-- images with blurb -->
+      <div class="container places">
+        <div class="row-featurette">
+          <div class="col-md-7">
+            <h3 class="featurette-heading"> Machu Picchu </h3>
+              <!--Facts from https://www.worldwildlife.org/blogs/good-nature-travel/posts/ten-interesting-facts-about-machu-picchu -->
+              <p class="info"> Machu Picchu is located more than 7,000 feet above sea level in the Andes Mountains in Peru and is the most popular tourist destination in Peru.
+              It is a symbol of the Incan Enpire and was built around 1450AD. In 2007 it was named as one of the Seven Wonders of the World.</p>
+          </div>
+            <div class="col-md-5">
+              <img class="featurette-image img-responsive img-thumbnail" src="machu-picchu.jpg" alt="machu picchu">
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row-featurette">
+          <div class="col-md-7 col-md-push-5">
+            <h3 class="featurette-heading"> The Northern Lights </h3>
+              <!--Facts from https://capturetheatlas.com/what-are-the-northern-lights/ -->
+              <p class="info"> The Northern Lights, also called Aurora Borealis is a natural phenomenon consisting of
+                light displays across the night sky. It is mostly visible at high elevations and can be seen by the naked eye.</p>
+          </div>
+          <div class="col-md-5 col-md-pull-7">
+            <img class="featurette-image img-responsive img-thumbnail" src="northern-lights.jpg" alt="northern lights">
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row-featurette">
+          <div class="col-md-7">
+            <h3 class="featurette-heading"> Plitvice Lakes </h3>
+              <!--Facts from Google -->
+              <p class="info"> Plitviče Lakes National Park is one of the oldest and largest national parks in Croatia. It is
+                known for a chain of 16 terraced lakes joined by waterfalls that extend into a limestone canyon.</p>
+          </div>
+            <div class="col-md-5">
+              <img class="featurette-image img-responsive img-thumbnail" src="plitvice-lakes.jpg" alt="plitvice lakes">
+            </div>
+        </div>
+      </div>
+
+      <hr>
+      <h3>Contact Me!</h3>
+      <br>
+        <form>
+          <div class="form-row">
+            <div class="col-md-6">
+              <input type="text" class="form-control" placeholder="Name">
+            </div>
+            <div class="col-md-6">
+              <input type="text" class="form-control" placeholder="Email">
+            </div>
+          </div>
+
+          <div class="form-row2">
+            <label for="msgbox">Message</label>
+            <textarea class="form-control" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        
+        <br>
+        
+          <div class="footer">
+
+            <img class="htmlvalid" src="html-icon.png" alt="html5" style="width:4%; height:auto;">
+            <img class="cssvalid" src="css-icon.png" alt="css3" style="width:3%; height:auto;">
+          </div>
+
+           <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+           <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+           integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+           <!-- Include all compiled plugins (below), or include individual files as needed -->
+           <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+           integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+      </body>
+    </html>
