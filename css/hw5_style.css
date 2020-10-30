@@ -1,0 +1,65 @@
+nav.navbar-static-top{
+    margin-bottom:0px;
+}
+#form {
+    padding-left:30px;
+    border:1px solid black;
+}
+#info {
+    font-size:14pt;
+    text-align: justify;
+}
+input {
+    width:60px;
+    margin: 10px;
+}
+h2 {
+    text-shadow: 2px 2px #ffffff;
+    text-align: center;
+    font-size: 30pt;
+    font-weight: lighter;
+}
+#submit {
+    width:100px;
+    margin-left:70px;
+    padding:5px;
+    margin-top:10px;
+    margin-bottom:15px
+}
+#x-min-error {
+    margin-right:50px;
+    padding-left:20px;
+}
+#x-max-error {
+    margin-right:50px;
+    padding-left:20px;
+}
+#y-min-error {
+    margin-right:50px;
+    padding-left:20px;
+}
+#y-max-error {
+    margin-right:50px;
+    padding-left:20px;
+}
+#mult_table {
+    width: auto;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#mult_table td {
+    padding: 7px;
+    border:2px solid black;
+    text-align: center;
+    vertical-align: center;
+    color:black;
+}
+#mult_table tbody tr:first-child td {
+    background-color: #2491ba;
+    color:black;
+}
+#mult_table tbody tr td:first-child {
+    background-color: #2491ba;
+    color:black;
+}
