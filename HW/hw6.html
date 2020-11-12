@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Multiplication Table</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="https://getbootstrap.com/docs/3.4/examples/navbar-static-top/">
+    <link rel="canonical" href="https://getbootstrap.com/docs/3.4/examples/jumbotron/">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <!-- css script -->
+    <link rel="stylesheet" href="css/hw6_style.css"/>
+</head>
+    <body>
+        <nav class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><Index</a>
+                </div>
+                <div = id="navbar" class="navbar-collapse collapse">
+                    <ul class = "nav navbar-nav">
+                    <li class="active"><a href="">Home</a></li>
+                    <li><a href="HW/hw2.html">Assignment 2</a></li>
+                    <li><a href="#a3">Assignment 3</a></li>
+                    <li><a href="#a4">Assignment 4</a></li>
+                    <li><a href="HW/hw5.html">Assignment 5</a></li>
+                    <li><a href="#a6">Assignment 6</a></li>
+                    <li><a href="#a7">Assignment 7</a></li>
+                    </ul>
+                </div>
+            </div>
+      </nav>
+      <div class="jumbotron jumbotron-fluid">
+          <div>
+              <h2>JavaScript Multiplication Table</h2>
+              <h4>With jQuery</h4>
+          </div>
+      </div>
+      <div class="container">
+          <form class="form" id="form">
+              <table id=formTable>
+                  <tr id="info">
+                      <td></td>
+                      <td>Enter values for the multiplication table</td>
+                      <br>
+                  </tr>
+                  <tr>
+                      <td>Minimum Column Value</td>
+                      <td><input type="number" id="Xmin" required></td>
+                  </tr>
+                  <tr>
+                      <td>Maximim Column Value</td>
+                      <td><input type="number" id="Xmax" required></td>
+                  </tr>
+                  <tr>
+                      <td>Minimum Row Value</td>
+                      <td><input type="number" id="Ymin" required></td>
+                  </tr>
+                  <tr>
+                      <td>Maximum Row Value</td>
+                      <td><input type="number" id="Ymax" required></td>
+                  </tr>
+                  <tr>
+                      <!--<td><input type="button" id="submit" value="Generate"></td>-->
+                      <td><button type="submit" class="submitBtn">Submit</button></td>
+                  </tr>
+              </table>
+          </form>
+      </div>
+      <br>
+          <div class="mycontainer">
+              <table id="mult_table"></table>
+          </div>
+         <!--js script-->
+          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+          <script type="text/javascript" src="js/jQ_mult.js"></script>
+    </body>
+</html>
