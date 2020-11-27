@@ -1,0 +1,80 @@
+nav.navbar-static-top{
+    margin-bottom:0px;
+}
+div.jumbotron-fluid {
+  background-color: maroon;
+}
+#form {
+    padding-left:30px;
+    border:1px solid black;
+}
+#table_tabs {
+  width: 100%;
+  overflow: scroll;
+}
+#info {
+    font-size:14pt;
+    text-align: center;
+}
+input {
+    width:60px;
+    margin: 10px;
+}
+h2 {
+    text-shadow: 2px 1px #000000;
+    color:white;
+    text-align: center;
+    font-size: 30pt;
+    font-weight: lighter;
+}
+h4 {
+    text-shadow: 2px 1px #000000;
+    text-align: center;
+    font-size: 22pt;
+    color: white;
+}
+button {
+    width:200px;
+    margin-left:200px;
+    margin-top:10px;
+}
+.ui-slider-horizontal {
+    width: 400px;
+}
+#Xmin {
+    margin-left:10px;
+}
+#Ymin {
+    margin-left:30px;
+}
+#Ymax {
+    margin-left:30px;
+}
+table {
+    width: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+table td {
+    padding: 10px;
+    border:2px solid black;
+    text-align: center;
+    vertical-align: middle;
+    color:black;
+}
+table tbody tr:first-child td {
+    background-color: #2491ba;
+    color:white;
+}
+table tbody tr td:first-child {
+    background-color: #2491ba;
+    color:white;
+}
+table td:nth-child(odd) {
+  background-color: #c8eef4;
+}
+table tr:nth-child(odd) {
+     background-color: #c8eef4;
+}
