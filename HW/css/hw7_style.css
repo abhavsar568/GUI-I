@@ -38,6 +38,11 @@ button {
     margin-left:200px;
     margin-top:10px;
 }
+#error_msg {
+    font-size: 14pt;
+    font-weight: bold;
+    color:red;
+}
 .ui-slider-horizontal {
     width: 400px;
 }
