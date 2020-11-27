@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<!--
+  Avani Bhavsar, Umass Lowell Computer Science
+  avani_bhavsar@student.uml.edu
+  96.61 GUI Programming I
+  LINK~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  Created November 20, 2020
+  Incorporate jQuery UI Tabs and sliders with the multiplication table.
+  -->
+<html lang="en">
+<head>
+    <title>Multiplication Table</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="https://getbootstrap.com/docs/3.4/examples/navbar-static-top/">
+    <link rel="canonical" href="https://getbootstrap.com/docs/3.4/examples/jumbotron/">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+          integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <!--jQ-->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <!--<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">-->
+    <!-- css script -->
+    <link rel="stylesheet" href="css/hw7_style.css">
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Index</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="">Home</a></li>
+                    <li><a href="HW/hw2.html">Assignment 2</a></li>
+                    <li><a href="#a3">Assignment 3</a></li>
+                    <li><a href="#a4">Assignment 4</a></li>
+                    <li><a href="HW/hw5.html">Assignment 5</a></li>
+                    <li><a href="#a6">Assignment 6</a></li>
+                    <li class="active"><a href="#a7">Assignment 7</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="jumbotron jumbotron-fluid">
+        <div>
+            <h2>JavaScript Multiplication Table</h2>
+            <h4>With jQuery Tabs and Sliders</h4>
+        </div>
+    </div>
+    <div class="container">
+        <form class="form" id="form">
+            <div id="info">
+                <label>Enter values for the Multiplication Table</label>
+            </div>
+            <div>
+                <label>Minimum Column Value: </label>
+                <input type="number" id="Xmin" value="0" required>
+                <div id="Xmin_slider"></div>
+            </div>
+            <div>
+                <label>Maximum Column Value: </label>
+                <input type="number" id="Xmax" value="0" required>
+                <div id="Xmax_slider"></div>
+            </div>
+            <div>
+                <label>Minimum Row Value: </label>
+                <input type="number" id="Ymin" value="0" required>
+                <div id="Ymin_slider"></div>
+            </div>
+            <div>
+                <label>Maximum Row Value: </label>
+                <input type="number" id="Ymax" value="0" required>
+                <div id="Ymax_slider"></div>
+            </div>
+            <button type="submit" id="submitBtn" class="btn btn-success">Submit</button>
+            <button type="button" id="delSelected" class="btn btn-danger" onclick="closeAllTabs()">Delete Selected Tabs</button>
+        </form>
+        <div id="error_msg"></div>
+    </div>
+    <br>
+    <div class="mycontainer">
+        <div class="container-fluid">
+            <div id="table_tabs">
+                <ul>
+                </ul>
+            </div>
+        </div>
+        <!--<table id="mult_table"></table>-->
+    </div>
+
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!--jQuery Validate-->
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.js"></script>
+
+    <!--jQuery UI-->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!--Bootstrap-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+    <!--HW7 js file-->
+    <script type="text/javascript" src="js/jQtab_mult.js"></script>
+</body>
+</html>
