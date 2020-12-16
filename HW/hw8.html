@@ -1,0 +1,94 @@
+﻿<!--
+  Avani Bhavsar, Umass Lowell Computer Science
+  avani_bhavsar@student.uml.edu
+  COMP 4610 GUI Programming I
+  Last updated: 12/16/20
+  Simulate a one-line scrabble game using drag and drop
+  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="canonical" href="https://getbootstrap.com/docs/3.4/examples/navbar-static-top/">
+    <link rel="canonical" href="https://getbootstrap.com/docs/3.4/examples/jumbotron/">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+          integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <!--jQ-->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <!--<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">-->
+    <!-- css script -->
+    <link rel="stylesheet" href="css/hw8_style.css" />
+    <title>Scrabble</title>
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Index</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="">Home</a></li>
+                    <li><a href="HW/hw2.html">Assignment 2</a></li>
+                    <li><a href="#a3">Assignment 3</a></li>
+                    <li><a href="#a4">Assignment 4</a></li>
+                    <li><a href="HW/hw5.html">Assignment 5</a></li>
+                    <li><a href="#a6">Assignment 6</a></li>
+                    <li><a href="#a7">Assignment 7</a></li>
+                    <li class="active"><a href="#a8">Assignment 8</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="jumbotron jumbotron-fluid">
+        <div>
+            <h2>Scrabble</h2>
+        </div>
+    </div>
+    <div class="Score mycontainer"> <!--Section with the updating score-->
+        <h4>Total Score:</h4>
+        <div id="total_score"></div>
+        <h4>Word Score:</h4>
+        <div id="word_score"></div>
+
+        <button type="submit" class="btn btn-success" onclick="getWordScore()">Submit Word</button>
+        <button type="button" class="btn">Get Letters</button>
+        <button type="reset" class="btn btn-danger" onclick="resetGame()">Reset</button>
+    </div>
+
+    <br />
+
+    <div id="board_container"></div>
+
+    <br />
+
+    <div id="letter_rack"></div>
+    <br />
+
+
+
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!--jQuery Validate-->
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.js"></script>
+
+    <!--jQuery UI-->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!--Bootstrap-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+    <!--HW7 js file-->
+    <script type="text/javascript" src="js/scrabble.js"></script>
+</body>
+</html>
