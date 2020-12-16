@@ -1,0 +1,50 @@
+/*
+Avani Bhavsar, Umass Lowell Computer Science
+avani_bhavsar@student.uml.edu
+COMP 4610 GUI Programming I
+Last updated: 12 / 16 / 20
+CSS file for HW8
+*/
+nav.navbar-static-top {
+    margin-bottom: 0px;
+}
+h2 {
+    text-shadow: 2px 1px #000000;
+    color: white;
+    text-align: center;
+    font-size: 30pt;
+    font-weight: lighter;
+}
+
+#board_container {
+    width: 500px;
+    height: 120px;
+    display: block;
+    margin-left:300px;
+}
+
+#letter_rack {
+    background-image: url("../img/rack.png"); /*used the rack image as the background picture so the scrabble tiles would appear 'on' it*/
+    background-repeat:no-repeat;
+    background-size:490px, 140px;
+    width: 490px;
+    height: 140px;
+}
+#letter_rack img {
+    width: 50px;
+    height: 50px;
+    margin-left: 5px;
+    margin-right: 10px;
+    margin-top: 60px;
+}
+
+
+div.jumbotron-fluid {
+    background-color: maroon;
+}
+
+div.mycontainer {
+    padding-left: 30px;
+    border: 1px solid black;
+    background-color: white;
+}
